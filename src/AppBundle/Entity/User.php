@@ -275,7 +275,9 @@ class User
      */
     public function __construct()
     {
+        $this->pilots = new \Doctrine\Common\Collections\ArrayCollection();
         $this->reviewAuthors = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->passengers = new \Doctrine\Common\Collections\ArrayCollection();
     }
 
     /**
